@@ -85,6 +85,7 @@ Keeping your bot online 24/7 using [UptimeRobot](https://uptimerobot.com/)
 
 Since this bot is new we haven't created a support server yet, but we will soon, so make sure to check back regularly.
 
+Please open an [Issue](https://github.com/qwikz/lfgbot/issues) for any questions.
 
 
 
