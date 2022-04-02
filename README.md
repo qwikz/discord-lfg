@@ -19,7 +19,7 @@ This bot is meant for one server only, this bot uses slash commands, and at this
 
 #### I. Setting up your server
 
-1. Create a category (you can name it everything)
+1. Create a category (you can name it anything)
 2. Move all your LFG channels so they are listed under the category. (the commands only work in channels listed under the category you setup)
 
 > At this time, the commands will only work in channels listed under the category you created. In future releases we may make this optional. Plus, it makes your server look clean.
