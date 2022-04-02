@@ -1,5 +1,7 @@
 # LFG Discord Bot
 
+Join our [support server](https://discord.gg/gyDAUwvjQU) for any questions.
+
 This is a simple looking for group bot, to help members of a server find other members to play games with!
 
 This bot is new, so it is fairly small (but simple) we will be updating the bot regularly and adding in more features.
