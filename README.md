@@ -10,7 +10,7 @@ This bot is new, so it is fairly small (but simple) we will be updating the bot 
 
 This bot is meant for one server only, this bot uses slash commands, and at this time, the slash commands will only work in one server. We may update this, so they work globally, but in the mean time, please note that you can only use the bot in one server.
 
-## Requirement
+## Requirements
 
 * Node.js `v16.6.0` or higher
 * Npm `v7.0.0` or higher
