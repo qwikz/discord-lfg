@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { Client, Collection, Intents, MessageEmbed } = require('discord.js');
+const { Client, Collection, Intents, MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { token } = require('./config.json');
 const config = require('./config.json')
 const db = require('quick.db')
@@ -22,6 +22,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.data.name, command);
 }
 
+   
 client.once('ready', () => {
   
 console.log("Bot is ready!")
@@ -37,13 +38,18 @@ else
 {
   
 client.user.setActivity(`${lfg} player(s) lfg`, { type: 'WATCHING' });
-  
+
 }
   
 });
 
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
+  
+  if (interaction.isButton()){
+    
+  
+  }
 
 
 	const command = client.commands.get(interaction.commandName);
@@ -51,10 +57,14 @@ client.on('interactionCreate', async interaction => {
 	if (!command) return;
 
 	try {
-		await command.execute(interaction, config, MessageEmbed, client, db);
+		await command.execute(interaction, config, MessageEmbed, client, db, MessageActionRow, MessageButton);
 	} catch (error) {
 		console.error(error);
-		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true }).catch(err => {
+      console.log(error)
+      console.log(err)
+      return;
+     });
 	}
 });
 
