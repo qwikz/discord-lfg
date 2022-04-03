@@ -44,7 +44,8 @@ This bot is meant for one server only, this bot uses slash commands, and at this
 4. Copy your bots *client id* and paste it in `"CLIENT_ID"` e.g. `"clientId": "YOUR_CLIENT_ID",` (you can copy the client id by right clicking on the bots profile and clicking *Copy Id*) make sure you have *[developer mode](https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/)* turned on.
 5. Copy your *server id* and paste it in `"GUILD_ID"` e.g. `"guildId": "YOUR_GUILD_ID",` (you can copy the server id by right clicking on your server and clicking *Copy Id*) make sure you have *[developer mode](https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/)* turned on.
 6. Copy the id of the category you created where all the lfg channels are listed, the commands will only be available to use in the lfg channels. Paste the id into `"CATEGORY_ID"`e.g. `"category": "YOUR_CATEGORY_ID",` (you can copy the category id by right clicking the category and clicking *Copy Id*) make sure you have *[developer mode](https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/)* turned on.
-7. Save the file. 
+7. Add any games you would like the bot to show when a user runs the command to create a post. Make sure the games are entered into the array correctly, e.g `"games": ["Game 1", "Game 2"]` If you enter them incorrectly, it could cause your bot to crash.
+8. Save the file. 
 
 #### IIII. Hosting
 
