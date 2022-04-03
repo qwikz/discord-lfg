@@ -3,7 +3,8 @@
 "token": "BOT_TOKEN",
 "guildId": "GUILD_ID",
 "clientId": "CLIENT_ID",
-"category": "CATEGORY_ID"
+"category": "CATEGORY_ID",
+"games": []
   
 }
 
