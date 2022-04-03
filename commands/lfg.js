@@ -167,7 +167,7 @@ let users3 = await db.get(`users_${interaction.guild.id}_${interaction.member.id
 
   let editembed = new MessageEmbed()
    .setTitle(`New LFG Post!`)
-   .setDescription(`${interaction.member} is looking for a group! \n───────────── \nJoin them in ${vchannel} with ${vchannel.members.size -1} other player(s) \n\n${link}  \n───────────── \n**Details:** ${answer2} \n\n**Members currently in group:** \n• ${users3.join("\n• ")}`)
+   .setDescription(`${interaction.member} is looking for a group! \n───────────── \nJoin them in ${vchannel} with ${vchannel.members.size -1} other player(s) \n\n${link}  \n───────────── \n**Description:** ${answer2} \n\n**Members currently in group:** \n• ${users3.join("\n• ")}`)
    .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
    .setFooter({text: `Powered by ${client.user.username}`, iconURL: client.user.displayAvatarURL({dynamic: true})})
    .setTimestamp()
