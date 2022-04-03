@@ -20,8 +20,20 @@ let channel = client.channels.cache.get(channelid)
 
 await db.delete(`lfg_${interaction.guild.id}`, 1)
 await db.delete(`lfg2_${interaction.member.id}`)
+      
+try {
+  
 await channel.messages.fetch(url).then(msg => msg.delete())
-let lfg = db.get(`lfg_${config.guildId}`)
+} catch(err) {
+  
+return interaction.reply({content: 'Unable to find post. This is probably because the post was deleted manually. You can now create a new post.', ephemeral: true})
+
+}
+  
+
+      
+      
+let lfg = db.get(`lfg_${config.server}`)
 if(lfg === null){
 client.user.setActivity(`0 player(s) lfg`, { type: 'WATCHING' });
 }
@@ -30,7 +42,7 @@ else
 client.user.setActivity(`${lfg} player(s) lfg`, { type: 'WATCHING' });
 }
       
-interaction.reply({content: "Your LFG post has been deleted", ephemeral: true})
+await interaction.reply({content: "Your LFG post has been deleted", ephemeral: true})
       
 
   
