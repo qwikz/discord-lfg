@@ -62,7 +62,7 @@ Replit will not keep your bot online for 24/7 unless you upgrade your account to
 3. Choose `Node.js` as template, and then click `+ Create Repl`.
 4. Go to your source code folder and select all the files.
 5. Drag and drop them to `Files` pane on Replit and click `replace`.
-6. Go to Replit shell (`ctrl`+`shift`+`s`) and run `npm install` command.
+6. Go to Replit shell (`ctrl`+`shift`+`s`) and run `npm install` command. 
 7. Once the packages have installed, run the following command to install Node.js v16 (if you haven't already)
 
 ```
@@ -71,6 +71,8 @@ npm init -y && npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_mod
 
 9. If the installation finished without any error, run the `node deploy-commands.js` command, this will make the slash commands available.
 10. If there are no errors, click the `Run` button at the top of Replit page and your bot should be online.
+
+> There may be an error with installing the `quick.db` package. If there is, run the command `npm rebuild` and that should fix it.
 
 Keeping your bot online 24/7 using [UptimeRobot](https://uptimerobot.com/)
 
