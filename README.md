@@ -90,6 +90,7 @@ Keeping your bot online 24/7 using [UptimeRobot](https://uptimerobot.com/)
 | ------- | --------- | ----------- | ----- |
 | **/lfg** | details | Create a looking for group post | /lfg `details`
 | **/deletelfg** | - | Deletes the users looking for group post | /close
+| **/stats** | - | Shows the guilds LFG stats 
 | **/ping** | - | Replies with "Pong!" | /config 
 
 ## Support
